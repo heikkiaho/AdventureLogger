@@ -13,9 +13,9 @@ int main () {
 	Logger * log = g_Logger;
     log->OpenFile("logFile.txt");
 
-    log << "File is open";
-    log << "let us write some lines";
-    log << "hahahaa";
+    *log << "File is open";
+    *log << "let us write some lines";
+    *log << "hahahaa";
     log->CloseFile();
     delete log;
 	return 0;
